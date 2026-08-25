@@ -36,3 +36,4 @@ class Main {
     }
 }
 ```
+>Output : Additon of 3 num: 6 && Addition of 2 num: 7 
