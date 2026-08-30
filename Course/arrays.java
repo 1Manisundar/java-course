@@ -21,15 +21,113 @@ public class arrays {
 
 // Multi Dimensional array
 
-class multiD{
+class multiD {
     public static void main(String[] args) {
-        int nums [][]= new int[3][4];
+        int nums[][] = new int[3][4];
 
-        for(int i=0;i<3;i++){
-            for(int j=0; j<4; j++){
+        // adding random values to the arrays.
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
+                nums[i][j] = (int) (Math.random() * 10);
+                // System.out.print(nums[i][j] + " ");
+
+            }
+            // System.out.println();
+
+        }
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
                 System.out.print(nums[i][j] + " ");
             }
             System.out.println();
         }
+
+        // enhanced for loop.. when no need of index
+
+        for (int row[] : nums) {
+            for (int col : row) {
+                System.out.print(col + " .");
+            }
+            System.out.println();
+        }
+
+    }
+}
+
+// Jagged Array -- when rows are fixed and colums are not that is called jagged array in java.
+
+class jaggA {
+    public static void main(String[] args) {
+        int nums[][] = new int[3][];
+        nums[0] = new int[3];
+        nums[1] = new int[2];
+        nums[2] = new int[1];
+
+        // adding random values to the arrays.
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums[i].length; j++) {
+                nums[i][j] = (int) (Math.random() * 10);
+                // System.out.print(nums[i][j] + " ");
+
+            }
+            // System.out.println();
+
+        }
+        // for (int i = 0; i < 3; i++) {
+        // for (int j = 0; j < 4; j++) {
+        // System.out.print(nums[i][j] + " ");
+        // }
+        // System.out.println();
+        // }
+
+        // enhanced for loop.. when no need of index
+
+        for (int row[] : nums) {
+            for (int col : row) {
+                System.out.print(col + " .");
+            }
+            System.out.println();
+        }
+
+    }
+}
+
+
+// 3D Array 
+
+class threeD {
+    public static void main(String[] args) {
+        int nums[][][] = new int[3][4][5];
+
+        // adding random values to the arrays.
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums[i].length; j++) {
+                for (int k =0; k < nums[i][j].length; k++ ){
+                nums[i][j][k] = (int) (Math.random() * 10);
+                }
+                // System.out.print(nums[i][j] + " ");
+
+            }
+            // System.out.println();
+
+        }
+        for (int i = 0; i < nums.length; i++) {
+        for (int j = 0; j < nums[i].length; j++) {
+                    for (int k = 0; k < nums[i][j].length; k++) {
+        System.out.print(nums[i][j][k] + " ");
+                    }
+        }
+        System.out.println();
+        }
+
+        // enhanced for loop.. when no need of index
+
+        // for (int row[] : nums) {
+        //     for (int col : row) {
+        //         System.out.print(col + " .");
+        //     }
+        //     System.out.println();
+        // }
+
     }
 }
