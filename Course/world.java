@@ -177,3 +177,31 @@ class calculator{
         return res;
     }
 }
+
+
+class calculator2 {
+
+    public int add (int n1, int n2, int n3){
+        return n1+n2+n3;
+    }
+
+    public int add (int n1, int n2){
+        return n1+n2;
+    }
+
+}
+class Main {
+    public static void main(String[] args) {
+     
+     calculator2 calc = new calculator2();
+
+     int r1 = calc.add(1,2,3);
+
+     System.out.println("Additon of 3 num: " +r1);
+
+     int r2 = calc.add(3,4);
+
+     System.out.println("Addition of 2 num: " + r2);
+
+    }
+}
