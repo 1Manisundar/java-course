@@ -112,3 +112,68 @@ class SwitchExample{
         }
     }
 }
+
+
+class  loops{
+
+    public static void main(String[] args) {
+        int i =1;
+
+        do{
+            // System.out.println("Hii");
+            
+            // int j=1;
+            // while (j<=5){
+            //     System.out.println("Bro how r u");
+            //     j++;
+            // }
+            i++;
+
+            /** While loop : if condition is satisfied complete loops runs until the conidtion not statisfies
+             * 
+             * do While loop : even if the condition is not satisfied and want to run the logic atleast once do while is useful.
+             */
+
+        }while (i<=10);
+
+        main1(args);
+    }
+
+    public static void main1(String[] args) {
+
+        for(int a=1; a<=7; a++){
+            System.out.println("Day " + a);
+
+            for(int j=1; j<=9;j++){
+                System.out.println("    "+"Time" + "--" + (j+8) + "-" + (j+9));
+            }
+        }
+    }
+
+
+}
+
+
+// objects oriented programming.
+
+// creating and using classes.
+class objects{
+
+    public static void main(String[] args) {
+        
+        calculator calc = new calculator();
+
+        int addition = calc.add(2,4);
+
+        System.out.println(addition);
+        
+    }
+}
+
+class calculator{
+
+    public int add(int n1, int n2){
+        int res = n1+n2;
+        return res;
+    }
+}
