@@ -131,3 +131,39 @@ class threeD {
 
     }
 }
+
+//example
+
+class Student{
+    int roll;
+    String name;
+    int marks;
+}
+
+class stuArray{
+    public static void main(String[] args) {
+        
+        Student s1 = new Student();
+        Student s2 = new Student();
+        Student s3 = new Student();
+
+       s1.roll =1;
+       s2.roll = 2;
+       s3.roll = 3;
+       s1.name ="Mani";
+       s2.name = "Sundar";
+       s3.name = "CH";
+
+    //    System.out.println(s1);
+       
+       Student Students[] = new Student[3];
+       Students[0]=s1;
+       Students[1]=s2;
+       Students[2]=s3;
+
+
+       for(int i=0; i < Students.length; i++){
+        System.out.println(Students[i].roll + "  " + Students[i].name);
+       }
+    }
+}
