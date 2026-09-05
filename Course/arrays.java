@@ -165,5 +165,10 @@ class stuArray{
        for(int i=0; i < Students.length; i++){
         System.out.println(Students[i].roll + "  " + Students[i].name);
        }
+
+       //for each example a.k.a enhanced for loop
+       for( Student s : Students){
+        System.out.println(s.roll + " " + s.name);
+       }
     }
 }
