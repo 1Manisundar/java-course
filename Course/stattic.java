@@ -12,6 +12,17 @@ class mobile{
         System.out.println(name+ "   this is inside staic method :>>" +"  "+ obj.brand+"   "+ " "+ obj.price); // static method can't use non static varibles.
         // we can still use the instance varibles by passing the direct methods.
     }
+
+    public mobile(){
+        brand ="Mani";
+        price=9999;
+        System.out.println("in construtor");
+    }
+
+    static{
+        name="my phone";
+        System.out.println("in static");
+    }
 }
 
 public class stattic {
@@ -29,6 +40,9 @@ public static void main(String[] args) {
         // obj2.name="s23";
         mobile.name="s23";
 
+        mobile obj3 = new mobile();
+        System.out.println(obj3.brand+"      not assigning any just calling defult");
+
         obj1.show();
         obj2.show();
 
@@ -41,3 +55,5 @@ public static void main(String[] args) {
 
 
 // question??? why we using static for main method?? deadlock here?
+
+//notes: if methods are not instantiated then static block wont be called. so we need to call class of class using exception to instaniate static block.
