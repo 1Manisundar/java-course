@@ -6,6 +6,12 @@ class mobile{
     public void show(){
         System.out.println(brand + " " + price + " " + name);
     }
+
+    //static method
+    public static void show1(mobile obj){
+        System.out.println(name+ "   this is inside staic method :>>" +"  "+ obj.brand+"   "+ " "+ obj.price); // static method can't use non static varibles.
+        // we can still use the instance varibles by passing the direct methods.
+    }
 }
 
 public class stattic {
@@ -25,6 +31,13 @@ public static void main(String[] args) {
 
         obj1.show();
         obj2.show();
+
+        obj1.show1(obj1);
+        mobile.show1(obj2);
+
 }
     
 }
+
+
+// question??? why we using static for main method?? deadlock here?
